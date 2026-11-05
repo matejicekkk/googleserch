@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulářové prvky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-links">
+        <a href="index.html">Vyhledávání</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="https://github.com/vasucet/googlesearch/blob/main/citace.md" target="_blank">Citace a zdroje</a>
+    </div>
+
+    <h1>Ukázka formulářových prvků</h1>
+    <form>
+        <fieldset>
+            <legend>Základní údaje</legend>
+            <label>Text input: <input type="text" name="text"></label><br>
+            <label>Password: <input type="password" name="pwd"></label><br>
+            <label>Email: <input type="email" name="email"></label><br>
+            <label>Number: <input type="number" name="num"></label><br>
+            <label>Date: <input type="date" name="date"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Výběr a přepínače</legend>
+            <label>Checkbox: <input type="checkbox" name="check"></label><br>
+            <label>Radio 1: <input type="radio" name="radio" value="1"></label>
+            <label>Radio 2: <input type="radio" name="radio" value="2"></label><br>
+            <label>Select menu:
+                <select name="select">
+                    <option value="1">Možnost 1</option>
+                    <option value="2">Možnost 2</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pokročilé prvky & Nefunkční prvky</legend>
+            <label>Textarea: <textarea name="area"></textarea></label><br>
+            <label>Range: <input type="range" name="rng"></label><br>
+            <label>Color: <input type="color" name="col"></label><br>
+            <!-- Nefunkční prvek označený dle zadání -->
+            <label style="color: gray;">Nefunkční tlačítko (nefunguje): <input type="button" value="Odeslat do vesmíru" disabled></label>
+        </fieldset>
+
+        <input type="submit" value="Odeslat">
+        <input type="reset" value="Reset">
+    </form>
+
+    <div class="validators">
+        <a href="https://validator.w3.org/nu/?doc=https://github.com/vasucet/googlesearch/blob/main/forms.html" target="_blank">Validovat HTML</a> | 
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://github.com/vasucet/googlesearch/blob/main/style.css" target="_blank">Validovat CSS</a>
+    </div>
+</body>
+</html>
